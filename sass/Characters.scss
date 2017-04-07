@@ -1,0 +1,101 @@
+body{
+	background-image: url('http://www.posterparty.com/images/marvel-comics-retro-collage-poster-GBfp2967.jpg');
+}
+
+.top{
+	background:maroon;
+	height:100px;
+	width:100%;
+	border-bottom:5px solid black;
+
+	h1 {
+		margin: 0px auto;
+		margin-left: 50%;
+		padding-top:27px;
+		color:White;
+		 font-family: 'Orbitron', sans-serif;
+	}
+	#menu {
+		margin-left: 70%;
+	}
+	li {
+		display:inline;
+		text-decoration: none;
+		margin-right: 5px;
+	}
+	a {
+		color:yellow;
+	}
+	.mobileMenu {
+	margin-left: 75%;
+}
+	#bars {
+		font-size:50px;
+		margin-left: 11%;
+		position: absolute;
+		bottom: 29px;
+	}
+}
+
+.middle {
+
+}
+.comicscontainer {
+	margin:0px auto;
+	margin-top: 200px;
+	border: 2px solid;
+	width:75%;
+	background:white;
+
+}
+
+
+.charactercontainer {
+	margin:0px auto;
+	margin-top: 200px;
+	border: 2px solid maroon;
+	width:75%;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+.mobileMenu {
+  display:none;
+  max-width:200px
+}
+
+#mobileList li {
+  display:block;
+  border: 2px solid blue;
+  background:white;
+}
+
+#mobileList a {
+  color:black;
+  text-align:center;
+  display:block;
+  padding:10px;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+
+@media (max-width: 990px) {
+  .mobileMenu {
+    display:block;
+  }
+  
+  .mobileMenu ul {
+    display:none;
+  }
+  
+  #menu {
+    display:none;
+  }
+}
+
+.top #bars:hover ~ #mobileList {
+	display:block !important;
+}
